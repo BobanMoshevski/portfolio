@@ -1,9 +1,7 @@
 import {
   Box,
-  Button,
   Card,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
   Grid,
@@ -47,9 +45,6 @@ const Portfolio = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button sx={{ color: "#333" }}>Read more</Button>
-                </CardActions>
               </Card>
             </Grid>
 
@@ -78,9 +73,6 @@ const Portfolio = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button sx={{ color: "#333" }}>Read more</Button>
-                </CardActions>
               </Card>
             </Grid>
 
@@ -107,9 +99,6 @@ const Portfolio = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
-                  <Button sx={{ color: "#333" }}>Read more</Button>
-                </CardActions>
               </Card>
             </Grid>
           </Grid>

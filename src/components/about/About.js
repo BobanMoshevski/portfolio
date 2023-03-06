@@ -48,6 +48,7 @@ const About = () => {
                 </p>
                 <Button
                   sx={{
+                    boxShadow: 10,
                     bgcolor: "#777",
                     color: "#333",
                     "&:hover": {

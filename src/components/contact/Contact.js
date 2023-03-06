@@ -1,6 +1,7 @@
-import { Box, Button, Grid, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import "./Contact.css";
+import { InputStyle } from "./inputStyle";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -33,12 +34,19 @@ const Contact = () => {
               <Typography variant="h6">Email: bmoshevski@gmail.com</Typography>
             </Grid>
 
-            <Grid item md={6} sm={12}>
+            <Grid
+              item
+              md={6}
+              sm={12}
+              boxShadow={15}
+              padding={4}
+              marginBottom={3}
+            >
               <form action="/contact" name="contact" method="post" netlify>
                 <input type="hidden" name="form-name" value="contact" />
                 <Grid container spacing={2}>
                   <Grid item sm={6} width>
-                    <TextField
+                    <InputStyle
                       name="name"
                       label="Name:"
                       variant="outlined"
@@ -57,7 +65,7 @@ const Contact = () => {
                   </Grid>
 
                   <Grid item sm={6} width>
-                    <TextField
+                    <InputStyle
                       name="email"
                       label="Email:"
                       variant="outlined"
@@ -76,15 +84,11 @@ const Contact = () => {
                   </Grid>
 
                   <Grid item sm={12} width>
-                    <TextField
+                    <InputStyle
                       name="message"
                       label="Message:"
-                      variant="outlined"
                       multiline
                       rows={4}
-                      sx={{
-                        width: "100%",
-                      }}
                       onChange={(e) => setMessage(e.target.value)}
                       onClick={() => setMessageError(true)}
                       required
@@ -99,6 +103,7 @@ const Contact = () => {
 
                 <Button
                   sx={{
+                    boxShadow: 10,
                     bgcolor: "#777",
                     color: "#333",
                     marginTop: 3,
